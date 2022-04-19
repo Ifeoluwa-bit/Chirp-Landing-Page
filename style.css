@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --twitter-blue: #00acee;
+    --twitter-logo-blue: #00aced;
+    --twitter-bg-blue: #c0deed;
+    --twitter-dark-blue: #0084b4;
+    --bg-twitter: #0066ff;
+    --bg: #ece4db;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    transition: all .2s linear;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+.btn{
+    background: var(--twitter-logo-blue);
+    margin-top: 10rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn img{
+    padding-right: 2rem;
+    position: relative;
+    top: .5rem;
+}
+
+header{
+    padding: 3rem 9%;
+    background: var(--bg);
+}
+
+header .header-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header .header-div .logo, .faq .footer .logo{
+    font-size: 3rem;
+    color: var(--bg-twitter);
+    font-weight: bolder;
+    user-select: none;
+}
+
+#menu-bar{
+    font-size: 3rem;
+    display: none;
+}
+
+header .header-div .nav-bar{
+    cursor: pointer;
+}
+
+
+
+header .header-div .nav-bar a{
+    padding-left: 2rem;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+header .header-div .nav-bar a:last-child{
+    background: var(--bg-twitter);
+    margin-left: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+  
+}
+
+header .header-div .nav-bar a:last-child img{
+    padding-right: 2rem;
+    position: relative;
+    top: .5rem;
+}
+
+.header-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.header-2 .content{
+    flex: 1 1 40rem;
+    width: 100%;
+    text-align: start;
+    margin-top: 10rem;
+}
+
+.header-2 .content h1{
+    font-size: 6rem;
+    font-weight: bolder;
+    text-transform: initial;
+    line-height: 1;
+}
+
+.header-2 .content p{
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
+    margin-bottom: 3rem;
+    color: #666;
+    text-transform: initial;
+    
+}
+
+.header-2 .content .learn{
+    color: var(--twitter-dark-blue);
+    padding-left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-2 .content .learn:hover{
+    text-decoration: underline;
+}
+
+
+.header-2 .content .user{
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+.header-2 .content .user img{
+    margin-left: -2.5rem;
+    object-fit: cover;
+}
+
+.header-2 .content p:last-child{
+    padding-top: 2rem;
+    font-size: 1.7rem;
+}
+
+.header-2 .content p:last-child span{
+    color: var(--twitter-dark-blue);
+    font-weight: bold;
+}
+
+
+.header-2 .image{
+   flex: 1 1 40rem;
+   margin-top: 4rem; 
+}
+
+.header-2 .image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-2 .image-1 img{
+    width: 100%;
+    object-fit: cover;
+    padding-top: 4rem;
+    display: none;
+}
+
+.features{
+    padding: 4rem 15%;
+}
+
+.features h3{
+    font-size: 3rem;
+    width: 40%;
+    line-height: 1;
+    padding-bottom: 2rem;
+    margin-left: 9rem;
+}
+
+.features .box-container{
+   width: 80%;
+   margin: auto;
+
+}
+
+.features .box-container .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.features .box-container .row .row-1{
+    flex: 1 1 30rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+   padding: 1.5rem;
+}
+
+.features .box-container .row .row-1 h4{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
+.features .box-container .row .row-1 p{
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+    text-transform: initial;
+}
+
+.customer{
+    background: var(--twitter-bg-blue);
+    
+}
+
+.customer .first{
+    padding: 4rem;
+    padding-left: 13rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-transform: initial;
+}
+
+.customer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
+.customer .box-container .box{
+    flex: 1 1 30rem;
+    background: #fff;
+    padding: 2rem;
+    position: relative;
+    height: 40%;
+    width: 35%;
+    border-radius: .5rem;
+    margin-right: 2rem;
+
+}
+
+.customer .box-container .box .tweet{
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+}
+
+.customer .box-container .box .user{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+}
+
+.customer .box-container .box .user img{
+    object-fit: cover;
+}
+
+.customer .box-container .box .user .user-info{
+    position: absolute;
+    top: -1.5rem;
+    left: -4.5rem;
+    
+}
+
+.customer .box-container .box .user .user-info h3{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    padding-left: 13rem;
+    padding-top: 4rem;
+    
+}
+.customer .box-container .box .user .user-info span{
+    position: absolute;
+    top: 6.5rem;
+    left: 12.5rem;
+    text-transform: initial;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.customer .box-container .box .fist-para{
+    margin: 2rem 0;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    color: #666;
+    text-transform: initial;
+}
+
+.customer .box-container .box span{
+    font-size: 1.7rem;
+    position: relative;
+    bottom: .5rem;
+    padding-left: .5rem;
+}
+
+.customer .box-container .box p:last-child{
+    float: right;
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.customer .box-container div:nth-child(2){
+    height: 50%;
+}
+
+
+.price{
+    padding: 5rem 15%;
+    text-align: center;
+}
+
+.price h3{
+    font-size: 5rem;
+    padding-bottom: 1.5rem;
+    text-transform: initial;
+}
+
+.price .first-p{
+    padding-bottom: 10rem;
+}
+
+.price p{
+    font-size: 3rem;
+    text-transform: initial;
+    color: #666;
+    line-height: 1.5;
+}
+
+.price .monthly{
+    background: var(--bg);
+    border-radius: .5rem;
+    border: .1rem solid #ff9900;
+    padding: 4rem;
+    position: relative;
+    width: 60%;
+    margin: auto;
+   
+}
+
+.price .monthly p{
+    text-transform: capitalize;
+    text-align: left;
+}
+
+
+.price .monthly h1{
+    font-size: 10rem;
+    text-align: left;
+}
+
+.price .monthly .mo{
+   font-size: 3rem;
+   position: absolute;
+   left: 15rem; top: 15rem;
+   text-transform: initial;
+   color: #666;
+}
+
+.price .content {
+    border-top: .2rem solid rgb(192, 192, 192);
+    border-bottom: .2rem solid rgb(192, 192, 192);
+    margin: 4rem 0;
+    padding: 3rem 0;
+    
+}
+
+.price .content .box{
+    text-align: left;
+    padding-bottom: 2rem;
+    color: #666;
+    display: flex;
+}
+
+.price .content .box p{
+    padding-left: 1rem;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 2rem;
+    position: relative;
+    top: .5rem;
+    text-transform: none;
+}
+
+.price .monthly .btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: -4rem;
+    text-transform: initial;
+}
+
+.faq{
+    background: var(--twitter-bg-blue);
+}
+
+.faq .footer{
+    padding: 4rem 9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto 0;
+    align-items: center;
+    
+}
+
+.faq .footer .right a{
+    
+    text-align: center;
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: #000;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 3rem;
+    }
+
+    .header-2 .image-1 img{
+        display: initial;
+    }
+
+    .header-2 .image{
+        display: none;
+    }
+
+    .header-2 .content{
+        margin-top: 2rem;
+    }
+    .header-2 .content h1{
+        width: 95%;
+    }
+    
+    .header-2 .content p{
+        font-size: 2rem;
+        padding-top: 1rem;    
+    }
+
+    .header-2 .content p:last-child{
+        width: 50%;
+    }
+
+    .features h3{
+        font-size: 2.8rem;
+        margin-left: 7rem;
+    }
+
+    .price h3{
+        font-size: 4rem;
+    }
+    
+    .price .first-p{
+        padding-bottom: 6rem;
+    }
+    
+    .price p{
+        font-size: 2.5rem;
+    }
+
+    .price .monthly{
+        padding: 3rem;
+        width: 80%;
+    }
+
+    .price .monthly h1{
+        font-size: 6rem;
+    }
+    
+    .price .monthly .mo{
+       left: 10rem; top: 9.5rem;
+    }
+
+    .faq .footer{
+        padding: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        margin: auto 0;
+    }
+    
+}
+
+@media(max-width:768px){
+    
+    #menu-bar{
+        display: initial;
+    }
+    header .header-div .nav-bar{
+        position: absolute;
+        top: 10%; left: 0; right: 0;
+        padding: 1rem 2rem;
+        display: none;
+    }
+
+    header .header-div .nav-bar.active{
+        display: initial;
+    }
+
+    header .header-div .nav-bar a{
+        display: block;
+        background: var(--bg-twitter);
+        color: #fff;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
+
+    header .header-div .nav-bar a:last-child{
+        margin-left: 0;
+        background: var(--bg-twitter);
+        border-radius: 0;
+        color: #fff;
+        font-size: 2rem;
+        
+    }
+
+    .header-2{
+        flex-direction: column-reverse;
+        padding: 4rem 1rem;
+    }
+    .header-2 .image-1 img{
+        display: none;
+    }
+    .header-2 .image{
+        display: initial;
+        
+    }
+   
+
+    .header-2 .content h1{
+        font-size: 5.5rem;
+    }
+
+    .header-2 .content p:last-child{
+        width: 100%;
+    }
+
+
+    .btn{
+        display: block;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .header-2 .content .learn{
+        display: block;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .features h3{
+        font-size: 2rem;
+        width: 50%;
+        margin-left: 5rem;
+    }
+    
+    .features .box-container .row .row-1 h4{
+        font-size: 1.7rem;
+    }
+    
+    .features .box-container .row .row-1 p{
+        font-size: 1.2rem;
+    }
+
+    .customer{
+        padding: 2rem;
+    }
+
+    .customer .first{
+        padding: 2rem;
+        padding-left: 5rem;
+        width: 90%;
+        font-size: 4rem;
+    }
+
+    .price .first-p{
+        padding-bottom: 4rem;
+    }
+
+    .price p{
+        font-size: 2rem;
+    }
+
+    .price .monthly{
+        padding: 2rem;
+    }
+
+    .price .monthly h1{
+        font-size: 4rem;
+    }
+    
+    .price .monthly .mo{
+       left: 6.8rem; top: 6.5rem;
+       font-size: 2.5rem;
+    }  
+    
+
+    .price .content .box p{
+        font-size: 1.7rem;
+    }
+
+    .price .content {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 0; 
+    }
+
+    .faq .footer{
+        padding: 2rem;
+    }
+
+    .faq .footer .right a{
+        text-align: center;
+        padding-left: 3rem;
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    
+
+  
+
+
+/*
+
+.customer .swiper .swiper-slide{
+    display: block;
+    width: 80vw;
+    margin-top: 2rem;
+}    
+
+.customer .swiper .swiper-slide .user .user-info{
+    position: absolute;
+    top: -1.5rem;
+    left: 3rem;
+}
+
+.customer .swiper .swiper-slide .user .user-info span{
+    position: absolute;
+    left: 5.5rem;
+}
+
+.customer .swiper .swiper-slide .user{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+ }
+
+ .customer .swiper{
+    display: initial;
+}
+
+.customer .swiper .swiper-slide{
+    display:initial;
+
+}
+*/
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+   header .header-div{
+       font-size: 1.5rem;
+   }
+
+   .header-2{
+    padding: 2rem;
+   }
+
+   .header-2 .content h1{
+    font-size: 5rem;
+}
+
+ 
+.header-2 .content p{
+    font-size: 1.7rem;
+   line-height: 1.2;    
+}
+
+.features h3{
+    margin-left: 3.5rem;
+}
+
+.customer .first{
+    padding: 2rem;
+    padding-left: 5rem;
+    width: 100%;
+    font-size: 3.5rem;
+}
+
+.price .content .box p{
+    font-size: 1.4rem;
+}
+
+.price .monthly .btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: -2rem;
+    font-size: 1.2rem;
+}
+
+
+.price .monthly .btn img{
+    padding-right: 1rem;
+}
+
+
+.faq .footer{
+    display: block;
+    text-align: left;
+}
+
+.faq .footer .right{
+    margin-top: 1.2rem;
+}
+}
